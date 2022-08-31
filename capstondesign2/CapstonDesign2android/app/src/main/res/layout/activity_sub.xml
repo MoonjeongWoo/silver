@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFACC"
+    tools:context=".SubActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/member"
+            android:fontFamily="@font/agrroa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="회원가입 "
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"/>
+        <EditText
+            android:textColor="@color/black"
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="이름(보호자이름):"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/agrroa"
+            android:layout_gravity="center"/>
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <EditText
+            android:textColor="@color/black"
+            android:id="@+id/patient"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="환자분 이름을 적어주세요:"
+            android:fontFamily="@font/agrroa"
+            android:textColorHint="@color/black"/>
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <EditText
+            android:textColor="@color/black"
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:textColorHint="@color/black"
+            android:hint="사용할 아이디를 적어주세요:"
+            android:fontFamily="@font/agrroa"
+            />
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <EditText
+            android:textColor="@color/black"
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColorHint="@color/black"
+            android:ems="10"
+            android:fontFamily="@font/agrroa"
+            android:hint="비밀번호를 적어주세요:"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <EditText
+            android:textColor="@color/black"
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/agrroa"
+            android:hint="이메일 주소를 적어주세요:"
+            android:textColorHint="@color/black"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp" />
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <EditText
+            android:textColor="@color/black"
+            android:id="@+id/editTextPhone2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/agrroa"
+            android:hint="핸드폰 번호를 적어주세요:"
+            android:textColorHint="@color/black"
+            android:inputType="phone"
+            android:minHeight="48dp" />
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="사는지역을 골라주세요!"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/agrroa"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinner_region"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="성별을 골라주세요!"
+                android:textColor="@color/black"
+                android:fontFamily="@font/agrroa"/>
+
+            <CheckBox
+                android:fontFamily="@font/agrroa"
+                android:id="@+id/checkbox_man"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:layout_gravity="center"
+                android:text="남자"
+                android:textColor="@color/black"/>
+
+            <CheckBox
+                android:fontFamily="@font/agrroa"
+                android:id="@+id/checkbox_womean"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="여자"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="다 작성하셨으면 다음 버튼을 눌러주세요!!"
+            android:fontFamily="@font/agrroa"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"/>
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="다음"
+            android:fontFamily="@font/agrroa"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</ScrollView>
