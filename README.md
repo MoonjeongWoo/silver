@@ -1,12 +1,20 @@
 # 👵요양원 어플
 <br/>
+### 목적
+- 최근 떠오르는 양로 시설과 요양 시설에 대해 사업성을 생각하며 만든 어플입니다. 늘어나는 고연령층을 위하여 맞춤형 앱을 만드면 사용자에게 접근성도 좋아지고,기업도 많은 이익을 볼 수 있을거라 생각해 만든 프로젝트 입니다. 
+
+
+## Member
+- 김진우
+- 문정우
 
 ## 😊Introduce
 ![mobile1](https://user-images.githubusercontent.com/106897607/200299369-d2944f91-ff08-4e9e-b6d4-e0e7adac403c.gif)
 
 ## 😆 Stack:
 ### Lang
-Java,PHP,Xml,
+Java,PHP,Xml
+
 ### IDE 
 Androud Studio,
 PHPmyadmin,
